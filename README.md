@@ -1,6 +1,4 @@
-<h1 align="center">vscode.nvim</h1>
-
-vscode.nvim (formerly `codedark.nvim`) is a Lua port of [vim-code-dark](https://github.com/tomasiser/vim-code-dark) colorscheme for [neovim](https://github.com/neovim/neovim) with VScode's light and dark theme
+<h1 align="center">darkcode.nvim</h1>
 
 ![VSCode.nvim](./demo.png)
 
@@ -26,12 +24,12 @@ Install via package manager
 
 ```lua
 -- Packer:
-use 'Mofiqul/vscode.nvim'
+use 'Senpai-10/darkcode.nvim'
 ```
 
 ```vim
 " Vim-Plug:
-Plug 'Mofiqul/vscode.nvim'
+Plug 'Senpai-10/darkcode.nvim'
 ```
 
 ## 🚀 Usage
@@ -43,8 +41,8 @@ vim.o.background = 'dark'
 -- For light theme
 vim.o.background = 'light'
 
-local c = require('vscode.colors')
-require('vscode').setup({
+local c = require('darkcode.colors')
+require('darkcode').setup({
     -- Enable transparent background
     transparent = true,
 
@@ -54,12 +52,12 @@ require('vscode').setup({
     -- Disable nvim-tree background color
     disable_nvimtree_bg = true,
 
-    -- Override colors (see ./lua/vscode/colors.lua)
+    -- Override colors (see ./lua/darkcode/colors.lua)
     color_overrides = {
         vscLineNumber = '#FFFFFF',
     },
 
-    -- Override highlight groups (see ./lua/vscode/theme.lua)
+    -- Override highlight groups (see ./lua/darkcode/theme.lua)
     group_overrides = {
         -- this supports the same val table as vim.api.nvim_set_hl
         -- use colors from this colorscheme by requiring vscode.colors!
@@ -75,7 +73,7 @@ If you are using [`lualine`](https://github.com/hoob3rt/lualine.nvim), you can a
 require('lualine').setup({
     options = {
         -- ...
-        theme = 'vscode',
+        theme = 'darkcode',
         -- ...
     },
 })
@@ -148,8 +146,8 @@ require("bufferline").setup({
 ## Switching theme
 
 ```
-:lua require('vscode').change_style('light')
-:lua require('vscode').change_style('dark')
+:lua require('darkcode').change_style('light')
+:lua require('darkcode').change_style('dark')
 ```
 
 ## 🍭 Extra folder

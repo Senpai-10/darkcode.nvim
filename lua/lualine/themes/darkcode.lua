@@ -1,6 +1,4 @@
--- Copyright (c) 2020-2021 Mofiqul Islam
--- MIT license, see LICENSE for more details.
-local vscode = {}
+local darkcode = {}
 local colors = {}
 
 if vim.o.background == 'dark' then
@@ -25,38 +23,38 @@ else
     colors.pink = '#FFA3A3'
 end
 
-vscode.normal = {
+darkcode.normal = {
     b = { fg = colors.blue, bg = colors.bg2 },
     a = { fg = vim.o.background == 'dark' and colors.fg or colors.bg, bg = colors.blue, gui = 'bold' },
     c = { fg = colors.fg, bg = colors.bg },
 }
 
-vscode.visual = {
+darkcode.visual = {
     a = { fg = colors.bg, bg = colors.yellow, gui = 'bold' },
     b = { fg = colors.yellow, bg = colors.bg2 },
 }
 
-vscode.inactive = {
+darkcode.inactive = {
     b = { fg = colors.bg, bg = colors.fg },
     a = { fg = colors.fg, bg = colors.bg, gui = 'bold' },
 }
 
-vscode.replace = {
+darkcode.replace = {
     b = { fg = colors.red, bg = colors.bg2 },
     a = { fg = vim.o.background == 'dark' and colors.bg or colors.fg, bg = colors.red, gui = 'bold' },
     c = { fg = colors.fg, bg = colors.bg },
 }
 
-vscode.insert = {
+darkcode.insert = {
     a = { fg = vim.o.background == 'dark' and colors.bg or colors.fg, bg = colors.green, gui = 'bold' },
     b = { fg = colors.green, bg = colors.bg2 },
     c = { fg = colors.fg, bg = colors.bg },
 }
 
-vscode.command = {
+darkcode.command = {
     b = { fg = colors.pink, bg = colors.bg2 },
     a = { fg = vim.o.background == 'dark' and colors.bg or colors.fg, bg = colors.pink, gui = 'bold' },
     c = { fg = colors.fg, bg = colors.bg },
 }
 
-return vscode
+return darkcode

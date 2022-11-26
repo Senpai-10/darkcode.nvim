@@ -1,4 +1,4 @@
-local c = require('vscode.colors')
+local c = require('darkcode.colors')
 
 local hl = vim.api.nvim_set_hl
 local theme = {}
