@@ -3,9 +3,9 @@ if vim.o.background == 'dark' then
     colors = {
         vscNone = 'NONE',
         vscFront = '#D4D4D4',
-        vscBack = '#1E1E1E',
+        vscBack = '#111111',
 
-        vscTabCurrent = '#1E1E1E',
+        vscTabCurrent = '#111111',
         vscTabOther = '#2D2D2D',
         vscTabOutside = '#252526',
 
