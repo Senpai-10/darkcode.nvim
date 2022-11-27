@@ -7,9 +7,9 @@ if vim.o.background == 'dark' then
 
         vscTabCurrent = '#111111',
         vscTabOther = '#2D2D2D',
-        vscTabOutside = '#252526',
+        vscTabOutside = '#111111',
 
-        vscLeftDark = '#252526',
+        vscLeftDark = '#111111',
         vscLeftMid = '#373737',
         vscLeftLight = '#636369',
 
