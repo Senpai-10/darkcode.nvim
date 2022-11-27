@@ -1,27 +1,15 @@
 local darkcode = {}
 local colors = {}
 
-if vim.o.background == 'dark' then
-    colors.bg = '#262626'
-    colors.bg2 = '#373737'
-    colors.fg = '#ffffff'
-    colors.red = '#f44747'
-    colors.green = '#4EC9B0'
-    colors.blue = '#0a7aca'
-    colors.lightblue = '#5CB6F8'
-    colors.yellow = '#ffaf00'
-    colors.pink = '#DDB6F2'
-else
-    colors.bg = '#F5F5F5'
-    colors.bg2 = '#E4E4E4'
-    colors.fg = '#343434'
-    colors.red = '#FF0000'
-    colors.green = '#008000'
-    colors.blue = '#AF00DB'
-    colors.lightblue = '#0451A5'
-    colors.yellow = '#ffaf00'
-    colors.pink = '#FFA3A3'
-end
+colors.bg = '#262626'
+colors.bg2 = '#373737'
+colors.fg = '#ffffff'
+colors.red = '#f44747'
+colors.green = '#4EC9B0'
+colors.blue = '#0a7aca'
+colors.lightblue = '#5CB6F8'
+colors.yellow = '#ffaf00'
+colors.pink = '#DDB6F2'
 
 darkcode.normal = {
     b = { fg = colors.blue, bg = colors.bg2 },
