@@ -5,6 +5,7 @@ darkcode.setup = function(user_opts)
     local defaults = {
         transparent = false,
         italic_comments = true,
+        italic_keywords = true,
         color_overrides = {},
         group_overrides = {},
         disable_nvimtree_bg = true,
