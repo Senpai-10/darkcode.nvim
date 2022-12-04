@@ -1,4 +1,4 @@
-lua << EOF
-local darkcode = require("darkcode")
-darkcode.setup({})
-EOF
+" lua << EOF
+" local darkcode = require("darkcode")
+" darkcode.setup({})
+" EOF

@@ -10,18 +10,8 @@ darkcode.setup = function(user_opts)
         disable_nvimtree_bg = true,
     }
 
-    -- backwards compatibility: let users still set settings with global vars
-    local global_settings_opts = vim.tbl_extend('force', defaults, {
-        transparent = (vim.g.darkcode_transparent == true
-                       or vim.g.darkcode_transparent == 1),
-        italic_comments = (vim.g.darkcode_italic_comment == true
-                           or vim.g.darkcode_italic_comment == 1),
-        disable_nvimtree_bg = (vim.g.darkcode_disable_nvim_tree_bg == true
-                               or vim.g.darkcode_disable_nvim_tree_bg == 1),
-    })
-
     -- but override global vars settings with setup() settings
-    local opts = vim.tbl_extend('force', global_settings_opts, user_opts)
+    local opts = vim.tbl_extend('force', defaults, user_opts)
 
     -- setting transparent to true removes the default background
     if opts.transparent then
